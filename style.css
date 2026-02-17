@@ -1,0 +1,112 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App container */
+.container {
+  background: white;
+  width: 350px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Input section */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #4facfe;
+}
+
+/* Add button */
+.add {
+  padding: 10px 15px;
+  border: none;
+  background: #4facfe;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.add:hover:not(:disabled) {
+  background: #2f8efc;
+}
+
+/* Tasks container */
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Single task */
+.task {
+  background: #f5f7fa;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+/* Completed task */
+.task.done {
+  background: #d4edda;
+  text-decoration: line-through;
+  color: #555;
+}
+
+/* Delete button */
+.del {
+  background: #ff4d4d;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.del:hover {
+  background: #e60000;
+}
